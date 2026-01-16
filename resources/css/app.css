@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html[dir="rtl"] {
+        direction: rtl;
+    }
+    
+    html[dir="ltr"] {
+        direction: ltr;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        @apply antialiased;
+    }
+}
+
+@layer components {
+    .btn-primary {
+        @apply bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg;
+    }
+    
+    .btn-secondary {
+        @apply bg-white text-primary-600 border-2 border-primary-600 px-8 py-4 rounded-lg font-semibold hover:bg-primary-600 hover:text-white transition-all duration-300 transform hover:scale-105;
+    }
+    
+    .card {
+        @apply bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2;
+    }
+    
+    .section-padding {
+        @apply py-16 md:py-24;
+    }
+    
+    .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .slide-in-left {
+        opacity: 0;
+        transform: translateX(-50px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    
+    .slide-in-left.visible {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    .slide-in-right {
+        opacity: 0;
+        transform: translateX(50px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    
+    .slide-in-right.visible {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    .scale-in {
+        opacity: 0;
+        transform: scale(0.9);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    
+    .scale-in.visible {
+        opacity: 1;
+        transform: scale(1);
+    }
+    
+    .gradient-text {
+        @apply bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent;
+    }
+    
+    .feature-icon {
+        @apply w-20 h-20 rounded-full bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center text-white shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl;
+    }
+    
+    .service-card {
+        @apply card group relative overflow-hidden;
+    }
+    
+    .service-card::before {
+        content: '';
+        @apply absolute inset-0 bg-gradient-to-br from-primary-500/10 to-transparent opacity-0 transition-opacity duration-300;
+    }
+    
+    .service-card:hover::before {
+        @apply opacity-100;
+    }
+    
+    .portfolio-item {
+        @apply card group cursor-pointer relative overflow-hidden;
+    }
+    
+    .portfolio-item img {
+        @apply transition-transform duration-500;
+    }
+    
+    .portfolio-item:hover img {
+        @apply scale-110;
+    }
+    
+    .hero-title {
+        @apply text-5xl md:text-7xl font-bold leading-tight;
+        animation: fadeInUp 1s ease-out;
+    }
+    
+    .hero-subtitle {
+        @apply text-xl md:text-2xl text-primary-100;
+        animation: fadeInUp 1s ease-out 0.2s both;
+    }
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+    }
+    
+    .float-animation {
+        animation: float 6s ease-in-out infinite;
+    }
+    
+    .navbar-scrolled {
+        @apply shadow-lg bg-white/95 backdrop-blur-sm;
+    }
+}
