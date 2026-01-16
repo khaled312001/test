@@ -14,7 +14,7 @@
             <div class="text-center fade-in">
                 <p class="text-primary-200 text-lg md:text-xl mb-4 font-medium">{{ __('The Next Step to Enhance Your Business') }}</p>
                 <h1 class="hero-title mb-6">
-                    {{ __('Boost Your Presence with') }} <span class="text-yellow-300">{{ config('app.name') }}</span>
+                    {{ __('Boost Your Presence with') }} <span class="text-yellow-300">{{ __('App Name') }}</span>
                 </h1>
                 <p class="hero-subtitle mb-10 max-w-3xl mx-auto">
                     {{ __('We develop all websites and web systems with the latest technologies, keeping pace with the rapid technical development in the web world.') }}

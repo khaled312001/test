@@ -18,7 +18,7 @@
                 @if($logo)
                     <img src="{{ asset('storage/' . $logo) }}" alt="{{ config('app.name') }}" class="h-10 mb-4">
                 @else
-                    <span class="text-2xl font-bold text-primary-400">{{ config('app.name') }}</span>
+                    <span class="text-2xl font-bold text-primary-400">{{ __('App Name') }}</span>
                 @endif
             </div>
             
@@ -130,7 +130,7 @@
         
         <div class="border-t border-gray-800 mt-12 pt-8 text-center">
             <p class="text-sm text-gray-400">
-                &copy; {{ date('Y') }} {{ config('app.name') }}. {{ __('All rights reserved.') }}
+                &copy; {{ date('Y') }} {{ __('App Name') }}. {{ __('All rights reserved.') }}
             </p>
         </div>
     </div>

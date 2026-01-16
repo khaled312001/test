@@ -137,4 +137,8 @@ return [
     'Client' => 'Client',
     'Date' => 'Date',
     'Category' => 'Category',
+    
+    // App Name
+    'Agency Website' => 'Agency Website',
+    'App Name' => 'Agency Website',
 ];

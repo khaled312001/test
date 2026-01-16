@@ -14,7 +14,7 @@
                     @if($logo)
                         <img src="{{ asset('storage/' . $logo) }}" alt="{{ config('app.name') }}" class="h-12 transition-transform duration-300 group-hover:scale-110">
                     @else
-                        <span class="text-3xl font-bold gradient-text transition-all duration-300 group-hover:scale-110 inline-block">{{ config('app.name') }}</span>
+                        <span class="text-3xl font-bold gradient-text transition-all duration-300 group-hover:scale-110 inline-block">{{ __('App Name') }}</span>
                     @endif
                 </a>
             </div>

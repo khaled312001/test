@@ -137,4 +137,8 @@ return [
     'Client' => 'العميل',
     'Date' => 'التاريخ',
     'Category' => 'الفئة',
+    
+    // App Name
+    'Agency Website' => 'برمجلي',
+    'App Name' => 'برمجلي',
 ];
