@@ -9,7 +9,7 @@
         </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 fade-in">
             <p class="text-primary-200 font-semibold mb-2">{{ __('Who We Are') }}</p>
-            <h1 class="text-4xl md:text-6xl font-bold mb-4">{{ __('About Us') }}</h1>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">{{ __('Who is Barmgely?') }}</h1>
         </div>
     </div>
 
@@ -23,8 +23,8 @@
                 <div class="prose prose-lg max-w-none fade-in">
                     <div class="space-y-8 text-gray-700 leading-relaxed">
                         <div>
-                            <h2 class="text-3xl font-bold text-gray-900 mb-4">{{ __('Who We Are') }}</h2>
-                            <p class="text-lg">{{ __('We are a modern web and app development agency dedicated to creating exceptional digital experiences. Our team of skilled professionals combines creativity with technical expertise to deliver solutions that drive results.') }}</p>
+                            <h2 class="text-3xl font-bold text-gray-900 mb-4">{{ __('Who is Barmgely?') }}</h2>
+                            <p class="text-lg">{{ __('Barmgely is a software company specialized in designing and programming websites and applications with the latest technologies, and includes a group of affiliated platforms.') }}</p>
                         </div>
                         
                         <div>

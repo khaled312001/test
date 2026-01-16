@@ -9,7 +9,7 @@
         </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 fade-in">
             <h1 class="text-4xl md:text-6xl font-bold mb-4">{{ __('Contact Us') }}</h1>
-            <p class="text-xl text-primary-100 max-w-2xl">{{ __('Get in touch with us today') }}</p>
+            <p class="text-xl text-primary-100 max-w-2xl">{{ __('You may not be able to know much about us here, so we are honored to respond to all your inquiries sent through the following means:') }}</p>
         </div>
     </div>
 
@@ -20,6 +20,7 @@
                 <div class="fade-in slide-in-left">
                     <div class="bg-white rounded-xl shadow-lg p-8">
                         <h2 class="text-3xl font-bold mb-6 text-gray-900">{{ __('Send us a Message') }}</h2>
+                        <p class="text-gray-600 mb-6">{{ __('You may not be able to know much about us here, so we are honored to respond to all your inquiries sent through the following means:') }}</p>
                         
                         @if(session('success'))
                             <div class="bg-green-50 border-l-4 border-green-400 text-green-700 px-4 py-3 rounded mb-6 fade-in">

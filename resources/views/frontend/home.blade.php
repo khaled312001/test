@@ -166,6 +166,7 @@
                 <p class="text-primary-600 font-semibold mb-2">{{ __('Achievements We Are Proud Of') }}</p>
                 <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">{{ __('Our Portfolio') }}</h2>
                 <p class="text-lg text-gray-600 max-w-2xl mx-auto">{{ __('Get to know us and some examples of our work that we provide to you with care, with a specialized team to build your ideas and turn your visions into tangible reality.') }}</p>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto mt-2">{{ __('And don\'t forget to request your service now to join our list of distinguished clients.') }}</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -193,7 +194,7 @@
             
             <div class="text-center mt-12 fade-in">
                 <a href="{{ route('portfolio.index') }}" class="btn-primary">
-                    {{ __('View More') }} +
+                    {{ __('View More +') }}
                 </a>
             </div>
         </div>
